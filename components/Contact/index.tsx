@@ -1,4 +1,5 @@
 "use client";
+import axios from "axios";
 import React from "react";
 
 const Contact = () => {
@@ -7,17 +8,14 @@ const Contact = () => {
   const [description, setDescription] = React.useState("");
   const [show, setShow] = React.useState(false);
 
-  const handleSubmit = (e: { preventDefault: () => void; }) => {
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    const data = {
-      name,
-      mail,
-      description,
-    };
-    console.log(data);
-    setName("")
-    setMail("")
-    setDescription("")
+
+    await axios.post("/api/contact", { name, mail, description });
+
+    setName("");
+    setMail("");
+    setDescription("");
   };
 
   return (
