@@ -1,15 +1,16 @@
 import React from "react";
 import s from "./Main.module.scss";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 const IconsArr = [
-  { imgUrl: "/icons/react.png", title: "React" },
-  { imgUrl: "/icons/typescript.png", title: "TypeScript" },
-  { imgUrl: "/icons/RTK.png", title: "RTK" },
-  { imgUrl: "/icons/tailwind.png", title: "Tailwind" },
-  { imgUrl: "/icons/next.png", title: "Next.JS" },
-  { imgUrl: "/icons/axios.png", title: "Axios" },
-  { imgUrl: "/icons/router.png", title: "Router" },
+  { imgUrl: "/icons/react.webp", title: "React" },
+  { imgUrl: "/icons/typescript.webp", title: "TypeScript" },
+  { imgUrl: "/icons/RTK.webp", title: "RTK" },
+  { imgUrl: "/icons/tailwind.webp", title: "Tailwind" },
+  { imgUrl: "/icons/next.webp", title: "Next.JS" },
+  { imgUrl: "/icons/axios.webp", title: "Axios" },
+  { imgUrl: "/icons/router.webp", title: "Router" },
 ];
 
 const Main = () => {
@@ -35,7 +36,7 @@ const Main = () => {
                 key={index}
                 className="justify-items-center grid grid-cols-1"
               >
-                <img src={icon.imgUrl} alt={icon.title} />
+                <img src={icon.imgUrl} alt={icon.title}/>
                 <h3 className="font-semibold text-[15px] text-center">
                   {icon.title}
                 </h3>

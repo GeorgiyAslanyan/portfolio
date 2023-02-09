@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import s from "./AboutMe.module.scss";
 
@@ -15,7 +16,7 @@ const AiWorks = () => {
                 Site for creating 3D models. Design elements: statues, flowers
               </p>
               <p className="bg-[#0057FF] text-white rounded-xl p-3 max-w-[75%] ml-auto mt-3">
-                Okay, I'll give you some variants.
+                Okay, I will give you some variants.
               </p>
             </div>
           </div>
@@ -27,7 +28,7 @@ const AiWorks = () => {
             </p>
             <div className="mt-auto">
               <img
-                src="/ai.png"
+                src="/ai.webp"
                 alt="ai"
                 className="rounded-xl p-3 ml-auto mt-3"
               />
@@ -41,7 +42,7 @@ const AiWorks = () => {
             <p>The customer receives a completely finished website</p>
             <div className="mt-auto">
               <img
-                src="/aiDone.png"
+                src="/aiDone.webp"
                 alt="ai"
                 className="rounded-xl p-3 mt-3 w-full"
               />
@@ -51,7 +52,7 @@ const AiWorks = () => {
       </div>
 
       <img
-        src="/bubble3.png"
+        src="/bubble3.webp"
         alt="bubble3"
         className="absolute z-0 left-[-100px] top-[60%] "
       />

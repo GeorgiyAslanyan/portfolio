@@ -7,18 +7,19 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Main from "@/components/Main";
 import Works from "@/components/Works";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-[url('/background.png')] bg-cover min-h-[100vh] relative">
+    <main className="bg-[url('/background.webp')] bg-cover min-h-[100vh] relative">
       <div>
         <img
-          src="/bubble1.png"
+          src="/bubble1.webp"
           alt="bubble1"
           className="absolute top-0 left-0"
         />
         <img
-          src="/bubble2.png"
+          src="/bubble2.webp"
           alt="bubble2"
           className="absolute top-0 right-0"
         />
@@ -31,7 +32,7 @@ export default function Home() {
         <Contact />
       </div>
       <img
-        src="/bubble4.png"
+        src="/bubble4.webp"
         alt="bubble4"
         className="absolute bottom-0 right-0 z-0"
       />
