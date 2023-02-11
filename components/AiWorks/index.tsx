@@ -27,35 +27,26 @@ const AiWorks = () => {
               and approved by the customer
             </p>
             <div className="mt-auto">
-              <img
-                src="/ai.webp"
-                alt="ai"
-                className="rounded-xl p-3 ml-auto mt-3"
-              />
+              <div className="ml-auto mt-3 rounded-xl object-cover overflow-hidden w-[240px]">
+                <img src="/ai.webp" alt="ai" className="rounded-xl" />
+              </div>
               <p className="bg-black text-white rounded-xl p-3 max-w-fit mt-3">
-              I prefer option 3
+                I prefer option 1
               </p>
             </div>
           </div>
           <div className="glassBackground xl:col-span-2 sm:col-span-4">
             <p className="text-[20px] font-semibold">3 step</p>
             <p>The customer receives a completely finished website</p>
-            <div className="mt-auto">
-              <img
-                src="/aiDone.webp"
-                alt="ai"
-                className="rounded-xl p-3 mt-3 w-full"
-              />
+            <div className="mt-auto w-full object-cover overflow-hidden">
+              <img src="/aiDone.webp" alt="ai" className="rounded-xl mt-3" />
             </div>
           </div>
         </div>
       </div>
-
-      <img
-        src="/bubble3.webp"
-        alt="bubble3"
-        className="absolute z-0 left-[-100px] top-[60%] "
-      />
+      <div className="absolute z-0 left-[-100px] top-[60%] w-[421px] h-[395px] object-cover overflow-hidden">
+        <img src="/bubble3.webp" alt="bubble3" />
+      </div>
     </div>
   );
 };

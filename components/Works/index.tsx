@@ -31,13 +31,13 @@ const Works = () => {
               target="_blank"
               rel="noreferrer"
               href="https://avila-shop.vercel.app/"
-              className="absolute bottom-3 right-3 px-3 py-1 bg-[#0057FF] flex rounded-md 
+              className="absolute bottom-3 right-3 px-3 py-1 bg-[#000000] flex rounded-md 
               hover:scale-110 text-white text-base ease-in-out duration-300"
             >
               Open
               <ArrowsPointingOutIcon width={15} className="ml-[10px]" />
             </a>
-            <img src="/avila.webp" alt="avila" className="object-cover h-full"/>
+            <img src="/avila.webp" alt="avila" className="object-cover h-full max-w-[370px]"/>
           </div>
         </div>
       </div>

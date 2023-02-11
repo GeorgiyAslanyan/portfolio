@@ -25,9 +25,8 @@ const Main = () => {
           <div className="max-w-full lg:max-w-[40%] ">
             <p className="text-[15px] font-semibold">
               I am a web developer with experience working with web applications
-              on React .js, Next.js, I can work with databases, with Axios
-              and other libraries. I also develop design using neural
-              networks.
+              on React .js, Next.js, I can work with databases, with Axios and
+              other libraries. I also develop design using neural networks.
             </p>
           </div>
           <div className="grid grid-cols-4 items-center gap-4 sm:flex sm:items-end justify-between max-w-full lg:w-[60%] lg:ml-10 pt-5 lg:pt-0">
@@ -36,7 +35,9 @@ const Main = () => {
                 key={index}
                 className="justify-items-center grid grid-cols-1"
               >
-                <img src={icon.imgUrl} alt={icon.title}/>
+                <div className="w-[50px] h-[50px] object-cover overflow-hidden">
+                  <img src={icon.imgUrl} alt={icon.title} />
+                </div>
                 <h3 className="font-semibold text-[15px] text-center">
                   {icon.title}
                 </h3>
