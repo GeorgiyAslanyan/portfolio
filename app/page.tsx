@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-[url('/background.webp')] bg-cover min-h-[100vh] relative">
+    <main className="bg-gradeint bg-cover min-h-[100vh] relative">
       <div>
         <div className="absolute top-0 left-0 md:block hidden w-[361px] h-[372px] object-cover overflow-hidden">
           <img src="/bubble1.webp" alt="bubble1" />

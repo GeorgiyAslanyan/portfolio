@@ -44,7 +44,7 @@ const AiWorks = () => {
           </div>
         </div>
       </div>
-      <div className="absolute z-0 left-[-100px] top-[60%] w-[421px] h-[395px] object-cover overflow-hidden">
+      <div className="absolute z-0 left-[-100px] max-w-full top-[60%] w-[421px] h-[395px] object-cover overflow-hidden">
         <img src="/bubble3.webp" alt="bubble3" />
       </div>
     </div>
