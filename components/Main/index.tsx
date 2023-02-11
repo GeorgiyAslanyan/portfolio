@@ -15,14 +15,14 @@ const IconsArr = [
 
 const Main = () => {
   return (
-    <div className="w-full relative mb-10" id="main">
+    <div className="w-full relative" id="main">
       <div className="pt-[144px]">
-        <h1 className="text-[40px] font-bold ml-[20%]">
+        <h1 className="text-[40px] font-bold ml-0 sm:ml-[20%] text-end md:text-start">
           Hello, im Georgy Aslanyan
         </h1>
-        <div className="flex mt-[100px]">
-          <div className="max-w-[40%]">
-            <h2 className="text-2xl font-semibold p-5">My skills</h2>
+        <h2 className="text-2xl font-semibold p-5 mt-[100px]">My skills</h2>
+        <div className="block lg:flex glassBackground">
+          <div className="max-w-full lg:max-w-[40%] ">
             <p className="text-[15px] font-semibold">
               I am a web developer with experience working with web applications
               on React .js, Next.js, I can work with databases, with Axios
@@ -30,7 +30,7 @@ const Main = () => {
               networks.
             </p>
           </div>
-          <div className="flex items-end justify-between w-[60%] ml-10">
+          <div className="grid grid-cols-4 items-center gap-4 sm:flex sm:items-end justify-between max-w-full lg:w-[60%] lg:ml-10 pt-5 lg:pt-0">
             {IconsArr.map((icon, index) => (
               <div
                 key={index}

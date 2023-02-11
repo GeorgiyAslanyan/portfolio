@@ -7,20 +7,20 @@ const AiWorks = () => {
     <div id="aiworks" className="relative">
       <div className="z-10 relative">
         <h2 className="text-2xl font-semibold p-5">How i work with AI</h2>
-        <div className="grid gap-x-4 grid-cols-9">
-          <div className="glassBackground col-span-3">
+        <div className="block sm:grid gap-4 grid-cols-9">
+          <div className="glassBackground xl:col-span-3 mb-4 sm:mb-0 sm:col-span-9">
             <p className="text-[20px] font-semibold">1 step</p>
             <p>The customer writes ideas how he wants to see the site</p>
             <div className="mt-auto">
-              <p className="bg-black text-white rounded-xl p-3 max-w-[75%] mt-3">
+              <p className="bg-black text-white rounded-xl p-3 max-w-fit mt-3">
                 Site for creating 3D models. Design elements: statues, flowers
               </p>
-              <p className="bg-[#0057FF] text-white rounded-xl p-3 max-w-[75%] ml-auto mt-3">
+              <p className="bg-[#0057FF] text-white rounded-xl p-3 max-w-fit ml-auto mt-3">
                 Okay, I will give you some variants.
               </p>
             </div>
           </div>
-          <div className="glassBackground col-span-4">
+          <div className="glassBackground xl:col-span-4 mb-4 sm:mb-0 sm:col-span-5">
             <p className="text-[20px] font-semibold">2 step</p>
             <p>
               With the help of a neural network, design options are generated
@@ -32,12 +32,12 @@ const AiWorks = () => {
                 alt="ai"
                 className="rounded-xl p-3 ml-auto mt-3"
               />
-              <p className="bg-black text-white rounded-xl p-3 max-w-[30%] mt-3">
+              <p className="bg-black text-white rounded-xl p-3 max-w-fit mt-3">
               I prefer option 3
               </p>
             </div>
           </div>
-          <div className="glassBackground col-span-2">
+          <div className="glassBackground xl:col-span-2 sm:col-span-4">
             <p className="text-[20px] font-semibold">3 step</p>
             <p>The customer receives a completely finished website</p>
             <div className="mt-auto">

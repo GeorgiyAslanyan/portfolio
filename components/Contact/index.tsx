@@ -21,7 +21,7 @@ const Contact = () => {
   return (
     <div className="z-10 relative" id="contact">
       <h2 className="text-2xl font-semibold p-5">Contact</h2>
-      <div className="glassBackground w-[60%]">
+      <div className="glassBackground xl:w-[60%] w-full">
         <form className="telegram-form" onSubmit={handleSubmit}>
           <div className="flex w-full justify-between mb-4">
             <input

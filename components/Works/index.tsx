@@ -1,4 +1,3 @@
-
 import { ArrowsPointingOutIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import React from "react";
@@ -8,9 +7,9 @@ const Works = () => {
     <div className="z-10 relative" id="works">
       <h2 className="text-2xl font-semibold p-5">Projects</h2>
       <div className="glassBackground">
-        <h3 className="text-[20px] font-semibold">Avila</h3>
-        <div className="flex justify-between">
-          <div className="gap-y-3 grid">
+        <div className="block md:flex justify-between">
+          <div className="gap-y-3 grid md:w-1/2 lg:w-2/3 w-full">
+            <h3 className="text-[20px] font-semibold">Avila</h3>
             <div>
               <p className="text-[#5c5c5c]">Description</p>
               <p className="">Internet shop with admin panel</p>
@@ -27,7 +26,7 @@ const Works = () => {
               <p className="">MockAPI</p>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative mt-4 rounded-md overflow-hidden">
             <a
               target="_blank"
               rel="noreferrer"
@@ -38,7 +37,7 @@ const Works = () => {
               Open
               <ArrowsPointingOutIcon width={15} className="ml-[10px]" />
             </a>
-            <img src="/avila.webp" alt="avila"/>
+            <img src="/avila.webp" alt="avila" className="object-cover h-full"/>
           </div>
         </div>
       </div>

@@ -17,16 +17,16 @@ export default function Home() {
         <img
           src="/bubble1.webp"
           alt="bubble1"
-          className="absolute top-0 left-0"
+          className="absolute top-0 left-0 md:block hidden"
         />
         <img
           src="/bubble2.webp"
           alt="bubble2"
-          className="absolute top-0 right-0"
+          className="absolute top-0 right-0 lg:block hidden"
         />
       </div>
       <Header />
-      <div className="mx-[100px]">
+      <div className="md:mx-[100px] mx-10">
         <Main />
         <AiWorks />
         <Works />
