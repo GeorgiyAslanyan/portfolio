@@ -1,7 +1,6 @@
 import React from "react";
-import s from "./Main.module.scss";
-import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
-import Image from "next/image";
+import { motion } from "framer-motion";
+import AnimatedText from "../AnimatedText";
 
 const IconsArr = [
   { imgUrl: "/icons/react.webp", title: "React" },
@@ -17,11 +16,25 @@ const Main = () => {
   return (
     <div className="w-full relative" id="main">
       <div className="pt-[144px]">
-        <h1 className="text-[40px] font-bold ml-0 sm:ml-[20%] text-end md:text-start">
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 100 }}
+          className="text-[40px] font-bold ml-0 sm:ml-[20%] text-end md:text-start"
+        >
           Hello, im Georgy Aslanyan
-        </h1>
-        <h2 className="text-2xl font-semibold p-5 mt-[100px]">My skills</h2>
-        <div className="block lg:flex glassBackground">
+        </motion.h1>
+        <motion.h2
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 100 }}
+          className="text-2xl font-semibold p-5 mt-[100px]"
+        >
+          My skills
+        </motion.h2>
+        <motion.div
+          className="block lg:flex glassBackground"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 100 }}
+        >
           <div className="max-w-full lg:max-w-[40%] ">
             <p className="text-[15px] font-semibold">
               I am a web developer with experience working with web applications
@@ -44,7 +57,7 @@ const Main = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

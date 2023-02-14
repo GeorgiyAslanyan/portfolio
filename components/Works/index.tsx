@@ -1,10 +1,12 @@
 import { ArrowsPointingOutIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import React from "react";
+import {motion} from 'framer-motion'
 
 const Works = () => {
   return (
-    <div className="z-10 relative" id="works">
+    <motion.div className="z-10 relative" id="works" initial={{ opacity: 0 }}
+    whileInView={{ opacity: 100 }} viewport={{once: true}}>
       <h2 className="text-2xl font-semibold p-5">Projects</h2>
       <div className="glassBackground">
         <div className="block md:flex justify-between">
@@ -41,7 +43,7 @@ const Works = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

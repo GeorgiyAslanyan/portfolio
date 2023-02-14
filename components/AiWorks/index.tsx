@@ -1,11 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import s from "./AboutMe.module.scss";
+import {motion} from 'framer-motion'
 
 const AiWorks = () => {
   return (
     <div id="aiworks" className="relative">
-      <div className="z-10 relative">
+      <motion.div className="z-10 relative" initial={{ opacity: 0 }}
+            whileInView={{ opacity: 100 }} viewport={{once: true}}>
         <h2 className="text-2xl font-semibold p-5">How i work with AI</h2>
         <div className="block sm:grid gap-4 grid-cols-9">
           <div className="glassBackground xl:col-span-3 mb-4 sm:mb-0 sm:col-span-9">
@@ -43,7 +45,7 @@ const AiWorks = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className="absolute z-0 left-[-100px] max-w-full top-[60%] w-[421px] h-[395px] object-cover overflow-hidden">
         <img src="/bubble3.webp" alt="bubble3" />
       </div>

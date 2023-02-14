@@ -1,6 +1,7 @@
 "use client";
 import axios from "axios";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [name, setName] = React.useState("");
@@ -19,7 +20,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="z-10 relative" id="contact">
+    <motion.div
+      className="z-10 relative"
+      id="contact"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 100 }}
+      viewport={{ once: true }}
+    >
       <h2 className="text-2xl font-semibold p-5">Contact</h2>
       <div className="glassBackground xl:w-[60%] w-full">
         <form className="telegram-form" onSubmit={handleSubmit}>
@@ -58,7 +65,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
