@@ -14,18 +14,17 @@ const Works = () => {
             <h3 className="text-[20px] font-semibold">Avila</h3>
             <div>
               <p className="text-[#5c5c5c]">Description</p>
-              <p className="">Internet shop with admin panel</p>
+              <p className="">Internet shop with admin panel(add /studio to url)</p>
             </div>
             <div>
               <p className="text-[#5c5c5c]">Frontend</p>
               <p className="">
-                React, typescript, redux toolkit, react-router-dom v6, axios,
-                heroicons, mui, react-paginate, useHooks
+                Next, axios, sass, tailwind, heroicons
               </p>
             </div>
             <div>
               <p className="text-[#5c5c5c]">Backend</p>
-              <p className="">MockAPI</p>
+              <p className="">Sanity</p>
             </div>
           </div>
           <div className="relative mt-4 rounded-md">
