@@ -13,7 +13,7 @@ const Works = () => {
       viewport={{ once: true }}
     >
       <h2 className="text-2xl font-semibold p-5">Projects</h2>
-      <div className="glassBackground">
+      <div className="glassBackground mb-4">
         <div className="block md:flex justify-between">
           <div className="gap-y-3 grid md:w-2/3 w-full">
             <h3 className="text-[20px] font-semibold">Avila</h3>
@@ -46,7 +46,7 @@ const Works = () => {
             <img
               src="/avila.webp"
               alt="avila"
-              className="lg:block hidden object-cover h-full max-w-[370px]"
+              className="lg:block hidden object-cover h-full max-w-[370px] rounded-md"
             />
           </div>
         </div>
@@ -84,7 +84,7 @@ const Works = () => {
             <img
               src="/social.webp"
               alt="socail"
-              className="lg:block hidden object-cover h-full max-w-[370px]"
+              className="lg:block hidden object-cover h-full max-w-[370px] rounded-md"
             />
           </div>
         </div>

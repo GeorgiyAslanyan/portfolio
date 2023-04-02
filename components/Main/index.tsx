@@ -49,8 +49,8 @@ const Main = () => {
                 key={index}
                 className="justify-items-center grid grid-cols-1"
               >
-                <div className="w-[50px] h-[50px] object-cover overflow-hidden">
-                  <img src={icon.imgUrl} alt={icon.title} />
+                <div className="w-[50px] h-[50px] object-cover rounded-full overflow-hidden">
+                  <img className="" src={icon.imgUrl} alt={icon.title} />
                 </div>
                 <h3 className="font-semibold text-[15px] text-center">
                   {icon.title}
