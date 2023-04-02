@@ -54,7 +54,7 @@ const Works = () => {
       <div className="glassBackground">
         <div className="block md:flex justify-between">
           <div className="gap-y-3 grid md:w-2/3 w-full">
-            <h3 className="text-[20px] font-semibold">Social</h3>
+            <h3 className="text-[20px] font-semibold">Social (beta)</h3>
             <div>
               <p className="text-[#5c5c5c]">Description</p>
               <p className="">
