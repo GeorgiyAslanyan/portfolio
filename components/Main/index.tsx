@@ -10,6 +10,7 @@ const IconsArr = [
   { imgUrl: "/icons/next.webp", title: "Next.JS" },
   { imgUrl: "/icons/axios.webp", title: "Axios" },
   { imgUrl: "/icons/router.webp", title: "Router" },
+  { imgUrl: "/icons/supabase.webp", title: "Supabase" },
 ];
 
 const Main = () => {
