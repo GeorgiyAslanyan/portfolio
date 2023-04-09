@@ -1,11 +1,14 @@
 const nodemailer = require("nodemailer");
 
+const pass = process.env.NEXT_APP_MAIL_PASSWORD || ''
+const user = process.env.NEXT_APP_MAIL_USER || ''
+
 export default async (req, res) => {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: process.env.MAIL_USER,
-          pass: process.env.MAIL_PASSWORD,
+          user,
+          pass
         },
       })   
 
@@ -22,6 +25,7 @@ export default async (req, res) => {
     text: message,
     html: message.replace(/\r\n/g, "<br />"),
   };
+  
 
   await transporter.sendMail(data);
 
