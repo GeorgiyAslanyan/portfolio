@@ -23,9 +23,6 @@ const Header = () => {
           <a className="" href="#main">
             About me
           </a>
-          <a className="" href="#aiworks">
-            How i work
-          </a>
           <a className="" href="#works">
             Projects
           </a>
